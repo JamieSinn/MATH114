@@ -1,0 +1,129 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsthm,amssymb,amsfonts}
+\usepackage{tipa}
+\usepackage{ gensymb }
+\usepackage[fleqn]{amsmath}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+
+\newcommand{\dbarl}{\left\lVert}
+\newcommand{\dbarr}{\right\rVert}
+
+
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+
+\begin{document}
+
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+
+\title{MATH 114, Fall 2016. Assignment 2}
+\author{James Sinn, 20654551}
+\maketitle
+
+\begin{problem}{1}
+	Find the angle between the vectors
+\(\left[
+\begin{matrix}
+	\sqrt{3}\\
+	1
+\end{matrix}
+\right]\)
+\text{ and }
+\(\left[
+\begin{matrix}
+	-\sqrt{3}\\
+	1
+\end{matrix}
+\right]\)
+\end{problem}
+
+	\[\cos\theta = \frac{-2}{2*2}\]
+	\[\cos\theta = \frac {-1}{2}\]
+	\[\arccos{\frac{-1}{2}}\]
+	\[90\degree or \frac{\pi}{2}\]
+
+\begin{problem}{2}
+	Triangle Inequality
+\end{problem}
+	\[\dbarl\vec x\dbarr = \sqrt{5}\]
+	\[\dbarl\vec y\dbarr = \sqrt{5}\]
+	\[\dbarl\vec x\dbarr + \dbarl\vec y\dbarr = 2\sqrt{5}\]
+	\[\dbarl\vec x + \vec y \dbarr = 3\sqrt{5}\]
+	\[3\sqrt{5} \geq 2\sqrt{5}\]
+
+	\[\vec x \text{ and } \vec y \text{ both have the same direction vector.}\]
+	\[\vec y \text{ is } \vec x \text{ scaled by a factor of 3. Because of this the Triangle Inequality is satisfied.}\]
+
+	\[\dbarl \vec x\dbarr = \sqrt{5}\]
+	\[\dbarl \vec y\dbarr = 3\sqrt{5}\]
+	\[\dbarl \vec x + \vec y\dbarr = 4\sqrt{5};
+	\[4\sqrt{5} \leq \sqrt{5} + 3\sqrt{5}\]
+
+
+\begin{problem}{3}
+	Work - Dot Product
+\end{problem}
+
+	\[ 100\cos{\frac{\pi}{6}} = \vec F \dot \vec d \]
+	\[ 100\frac{\sqrt{3}}{2} = 50\sqrt{3}\]
+	\[F = 50\sqrt{3}\]
+
+\begin{problem}{4}
+	Projections
+\end{problem}
+
+\begin{problem}{5}
+	Lines and Projections
+\end{problem}
+	\[\text{The vector equation of } y=\frac{-3}{2}x + 2 \text{ is }\]
+	\[\vec v = \left[\begin{matrix} 2\\-3 \end{matrix}\right]t + \left[\begin{matrix} 0\\2 \end{matrix}\right]\]
+	\[\text{This does/not satisfy the requirements for a subspace.}\]
+	\[\vec x = \left[\begin{matrix} 1\\9\end{matrix}\right] \vec y = \left[\begin{matrix} -4\\6\end{matrix}\right]\]
+	\[\dbarl \vec x \dbarr = \sqrt{82}\]
+	\[\vec x = \left[\begin{matrix}5\\3\end{matrix}\right] \vec y = \left[\begin{matrix}-4\\6\end{matrix}\right]\]
+	\[\text{I dislike projections}\]
+\begin{problem}{6}
+	Scalar Equation of a Plane
+\end{problem}
+	\[\vec PQ = \left[\begin{matrix}1\\1\\-4\end{matrix}\right]\]
+	\[\vec PR = \left[\begin{matrix}0\\-5\\-2\end{matrix}\right]\]
+	\[\vec n = \left[\begin{matrix}(1)(-2) - (-5)(-4)\\(-4)(0) - (1)(-2)\\(1)(-5) - (1)(0)\end{matrix}\right]\]
+	\[\vec n = \left[\begin{matrix}-22\\2\\-5\end{matrix}\right]\]
+		\[\vec P = -22x + 2y -5z\]
+		\[-22(x-1) + 2(y-5) -5(z-3) = 0\]
+		\[-22x +2y -5z = 27\]
+\begin{problem}{7}
+	Cross Product
+\end{problem}
+	\[\vec w = \left[\begin{matrix}(2)(3) - (2)(-1)\\(2)(-2) - (1)(1)\\(1)(-1) - (2)(-2)\\\end{matrix}\right]\]
+	\[\vec w = \left[\begin{matrix}	8\\-4\\5\\\end{matrix}\right]\]
+	\[\dbarl \vec w \dbarr = \sqrt{105}\]
+	\[\dbarl \vec x \dbarr = 3\]
+
+\begin{problem}{8}
+	Cross Product Theory
+\end{problem}
+	\[\text{When } \vec u \cdot \vec v \text{ equals 0, the two vectors are orthagonol.}\]
+	\[\text{The case of when the cross product of the two is equal to 0 is when either } \vec u \text{ or } \vec v\]
+	\[\text{is equal to the } \vec 0 \text{ vector.} \]
+	\[\text{Alternatively, but not applicable is when the two vectors are parallel or antiparallel.}\]
+
+\begin{problem}{9}
+	Complex Numbers
+\end{problem}
+	\[(1+ i\sqrt{3})(1 + i)\]
+	\[(1+i)-(1-i)\sqrt{3}\]
+	\[1 - \sqrt{3} + i(1 + \sqrt{3})\]
+
+
+	\[\frac{\pi + i\pi}{1 - \sqrt{3i}}\]
+\end{document}
