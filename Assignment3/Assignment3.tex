@@ -361,5 +361,177 @@ Therefore the vectors $\vec a_1,  \vec a_2,  \vec a_3$ are equivalent to the sys
 		\end{array}
 		\right]
 	\]
-System of Equations is consistent. Therefore the vectors $\vec a_1,  \vec a_2,  \vec a_3$ span $\mathds{R}^3$
+System of Equations is consistent. Therefore the vectors $\vec a_1,  \vec a_2,  \vec a_3$ span $\mathds{R}^3$.
+
+\begin{problem}{7}
+	Textbooks
+\end{problem}
+	\[1400 x_b + 1800 x_c + 600 x_p = 658,000\]
+	\[1300 x_b + 1700 x_c + 500 x_p = 587,000\]
+	\[1200 x_b + 1600 x_c + 400 x_p = 520,000\]
+	
+	\[=
+		\left[
+		\begin{array}{ccc|c}
+		1400 & 1800 & 600 & 658000\\
+		1300 & 1700 & 500 & 587000\\
+		1200 & 1600 & 400 & 520000\\
+		\end{array}
+		\right] \frac{1}{100} \begin{matrix}R_1\\R_2\\R_3\\\end{matrix}
+	\]
+	\[\sim
+		\left[
+		\begin{array}{ccc|c}
+		14 & 18 & 6 & 6580\\
+		13 & 17 & 5 & 5870\\
+		12 & 16 & 4 & 5200\\
+		\end{array}
+		\right] \begin{matrix} \frac{1}{14} R_1\\\\\ \end{matrix}
+	\]
+	\[\sim
+		\left[
+		\begin{array}{ccc|c}
+		1 & \frac{9}{7} & \frac{3}{7} & 470\\
+		13 & 17 & 5 & 5870\\
+		12 & 16 & 4 & 5200\\
+		\end{array}
+		\right] R_2 - 13R_1
+	\]
+	\[\sim
+		\left[
+		\begin{array}{ccc|c}
+		1 & \frac{9}{7} & \frac{3}{7} & 470\\
+		0 & \frac{2}{7} & \frac{-4}{7} & -240\\
+		12 & 16 & 4 & 5200\\
+		\end{array}
+		\right]  R_3 - 12R_1
+	\]
+	\[\sim
+		\left[
+		\begin{array}{ccc|c}
+		1 & \frac{9}{7} & \frac{3}{7} & 470\\
+		0 & \frac{2}{7} & \frac{-4}{7} & -240\\
+		0 & \frac{4}{7} & \frac{-8}{7} & -440\\
+		\end{array}
+		\right] \frac{7}{2}R_2
+	\]
+	\[\sim
+		\left[
+		\begin{array}{ccc|c}
+		1 & \frac{9}{7} & \frac{3}{7} & 470\\
+		0 & 1 & -2 & -840\\
+		0 & \frac{4}{7} & \frac{-8}{7} & -440\\
+		\end{array}
+		\right] R_3 + \frac{-4}{7}R_2
+	\]
+	\[\sim
+		\left[
+		\begin{array}{ccc|c}
+		1 & \frac{9}{7} & \frac{3}{7} & 470\\
+		0 & 1 & -2 & -840\\
+		0 & 0 & 0 & 40\\
+		\end{array}
+		\right] R_1 + \frac{-9}{7}R_2
+	\]
+	\[\sim
+		\left[
+		\begin{array}{ccc|c}
+		1 & 0 & 3 & 1550\\
+		0 & 1 & -2 & -840\\
+		0 & 0 & 0 & 40\\
+		\end{array}
+		\right] 
+	\]
+Because the RREF is inconsistent, there is no solution. This means the prices of each textbook have not changed as the equations are parallel to eachother. This could have been resolved from the coefficients of the equations as they are multiples of eachother.
+\begin{problem}{8}
+	PIRATE - YARR
+\end{problem}
+Putting the System of Equations into an augmented coefficient matrix.
+	\[=
+		\left[
+			\begin{array}{cccc|c}
+			1 & 1 & 1 & 1 & 70\\
+			0 & 1 & 1 & 0 & 30\\
+			0 & 0 & 2 & 2 & 90\\
+			0 & 4 & 0 & 1 & 80\\
+			\end{array}
+		\right] \frac{1}{2} R_3
+	\]
+	\[\sim
+		\left[
+			\begin{array}{cccc|c}
+			1 & 1 & 1 & 1 & 70\\
+			0 & 1 & 1 & 0 & 30\\
+			0 & 0 & 1 & 1 & 45\\
+			0 & 4 & 0 & 1 & 80\\
+			\end{array}
+		\right] R_1 - R_2
+	\]
+	
+	\[\sim
+		\left[
+			\begin{array}{cccc|c}
+			1 & 0 & 0 & 1 & 40\\
+			0 & 1 & 1 & 0 & 30\\
+			0 & 0 & 1 & 1 & 45\\
+			0 & 0 & -4 & 1 & -40\\
+			\end{array}
+		\right] R_4 + 4R_3
+	\]
+	\[\sim
+		\left[
+			\begin{array}{cccc|c}
+			1 & 0 & 0 & 1 & 40\\
+			0 & 1 & 1 & 0 & 30\\
+			0 & 0 & 1 & 1 & 45\\
+			0 & 0 & 0 & 5 & 140\\
+			\end{array}
+		\right] \frac{1}{5} R_4
+	\]
+	\[\sim
+		\left[
+			\begin{array}{cccc|c}
+			1 & 0 & 0 & 1 & 40\\
+			0 & 1 & 1 & 0 & 30\\
+			0 & 0 & 1 & 1 & 45\\
+			0 & 0 & 0 & 1 & 28\\
+			\end{array}
+		\right] R_3 - R_4
+	\]
+	\[\sim
+		\left[
+			\begin{array}{cccc|c}
+			1 & 0 & 0 & 1 & 40\\
+			0 & 1 & 1 & 0 & 30\\
+			0 & 0 & 1 & 0 & 17\\
+			0 & 0 & 0 & 1 & 28\\
+			\end{array}
+		\right] R_2 - R_3
+	\]
+	\[\sim
+		\left[
+			\begin{array}{cccc|c}
+			1 & 0 & 0 & 1 & 40\\
+			0 & 1 & 0 & 0 & 13\\
+			0 & 0 & 1 & 0 & 17\\
+			0 & 0 & 0 & 1 & 28\\
+			\end{array}
+		\right] R_1 - R_4
+	\]
+	\[\sim
+		\left[
+			\begin{array}{cccc|c}
+			1 & 0 & 0 & 0 & 12\\
+			0 & 1 & 0 & 0 & 13\\
+			0 & 0 & 1 & 0 & 17\\
+			0 & 0 & 0 & 1 & 28\\
+			\end{array}
+		\right]
+	\]
+\[A = 12, B = 13, C = 17, D = 28\]
+\[12 + 13 + 17 + 28 = 70\]
+\[13 + 17 = 30\]
+\[2(13) + 2(28) = 90\]
+\[4(13) + 28 = 80\]
+
 \end{document}
