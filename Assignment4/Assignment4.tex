@@ -45,6 +45,7 @@ b) 2x3 $\cdot$ 3x1 = 2x1\\
 \begin{problem}{2}
 	Matrix-Matrix Products
 \end{problem}
+
 a) 2x2 $\cdot$ 2x3 = 2x3\\
 	\[\sqbrl\begin{matrix}2 & 2\\3 & 3\\\end{matrix}\sqbrr\sqbrl\begin{matrix}-3 & 4 & 2\\1 & -4 & -6\\\end{matrix}\sqbrr
 	=\sqbrl\begin{matrix}-6 + 2 & 8 + -8 & 4 + -12\\-9 + 3 & 12 - 12 & 6 -18\\\end{matrix}\sqbrr
@@ -58,10 +59,12 @@ b) 3x2 $\cdot$ 2x2 = 3x2\\
  \begin{problem}{3}
  	Matrix Multiplications
  \end{problem}
- a)\\
+ 
+a)\\
  	\[\sqbrl\begin{matrix}1 & 2 & 3\\\end{matrix}\sqbrr\sqbrl\begin{matrix}1\\2\\3\\\end{matrix}\sqbrr
  	=\sqbrl\begin{matrix}1 + 4+ 9\end{matrix}\sqbrr
  	=\sqbrl\begin{matrix}14\end{matrix}\sqbrr\]
+ 	
 b)\\
 	\[\sqbrl\begin{matrix}1\\2\\3\\\end{matrix}\sqbrr\sqbrl\begin{matrix}1 & 2 & 3\\\end{matrix}\sqbrr
 	=\sqbrl\begin{matrix}1 & 2 & 3\\2 & 4 & 6\\3 & 6 & 9\\\end{matrix}\sqbrr\]
@@ -69,29 +72,199 @@ b)\\
 \begin{problem}{4}
 	Geometric Transformations
 \end{problem}
-By rotating the result by $\frac{-\pi}{4}$ we will reverse the rotation made to get $(-1, \sqrt{2}, 0)$.\\
+By rotating the result by the inverse of $R_\theta$ we will reverse the rotation made to get $(-1, \sqrt{2}, 0)$.\\
 3x3 $\cdot$ 3x1 = 3x1
-	\[\sqbrl\begin{matrix}\cos{\frac{-\pi}{4}} & \sin{\frac{-\pi}{4}}\\-\sin{\frac{-\pi}{4}} & \cos{\frac{-\pi}{4}}\end{matrix}\sqbrr\sqbrl\begin{matrix}-1\\\sqrt{2}\\\end{matrix}\sqbrr
+	\[\sqbrl\begin{matrix}\cos{\frac{\pi}{4}} & \sin{\frac{\pi}{4}}\\-\sin{\frac{\pi}{4}} & \cos{\frac{\pi}{4}}\end{matrix}\sqbrr\sqbrl\begin{matrix}-1\\\sqrt{2}\\\end{matrix}\sqbrr
 	= \sqbrl\begin{matrix}\frac{-\sqrt{2}-2}{2}\\\frac{-\sqrt{2}+2}{2}\end{matrix}\sqbrr\]
 	
 \begin{problem}{5}
 	Geometric Transformations
 \end{problem}
 For all questions below, I assumed that the matrix $A$ was to be multiplied with the input vector $\vec v$. Thus A is the matrix that will change $\vec v$ to get the desired transformation.\\
+
 a)\\
 	\[\sqbrl\begin{matrix}\frac{1}{2} & 0\\0 & \frac{1}{2}\end{matrix}\sqbrr\]
-b) - This is a simplification of having $\pi$ as $\theta$ in the rotation vector.\\
+	
+b)\\ This is a simplification of having $\pi$ as $\theta$ in the rotation vector in $R_{\theta}$\\
 	\[\sqbrl\begin{matrix}-1 & 0\\0 & -1\end{matrix}\sqbrr\]
-c) - \\
-
-d) \\
+	
+c)\\
+	\[\sqbrl\begin{matrix}0 & 1\\1 & 0\end{matrix}\sqbrr\]
+	
+d)\\
+	\[\sqbrl\begin{matrix}1 & 0\\0 & 0\end{matrix}\sqbrr\]
 
 \begin{problem}{6}
 	Geometric Transformations
 \end{problem}
+By rotating the vectors $\vec v_L$ and $\vec v_A$ by $\frac{-\pi}{2}$ about the z axis we will acheive the rotation relative to us 6 hours later.\\
+
+$\vec v_L$
+\[\sqbrl\begin{matrix}
+\cos{\frac{-\pi}{2}} & -\sin{\frac{-\pi}{2}} & 0\\
+\sin{\frac{-\pi}{2}} & \cos{\frac{-\pi}{2}} & 0 \\
+0 & 0 & 1\\\end{matrix}\sqbrr
+\sqbrl\begin{matrix}\frac{1}{\sqrt2}\\0\\\frac{1}{\sqrt2}\end{matrix}\sqbrr
+= \sqbrl\begin{matrix}0\\\frac{-\sqrt{2}}{2}\\\frac{\sqrt{2}}{2}\end{matrix}\sqbrr\]
+
+
+$\vec v_A$
+\[\sqbrl\begin{matrix}
+\cos{\frac{-\pi}{2}} & -\sin{\frac{-\pi}{2}} & 0\\
+\sin{\frac{-\pi}{2}} & \cos{\frac{-\pi}{2}} & 0 \\
+0 & 0 & 1\\\end{matrix}\sqbrr
+\sqbrl\begin{matrix}\frac{1}{\sqrt8}\\
+\frac{\sqrt{3}}{2}\\
+\frac{1}{\sqrt{8}}\end{matrix}\sqbrr
+= \sqbrl\begin{matrix}
+\frac{\sqrt{3}}{2}\\
+\frac{-\sqrt{2}}{4}\\
+\frac{\sqrt{2}}{4}\end{matrix}\sqbrr\]
+
+The angle between the two vectors initially was $\frac{\pi}{3}$. After the 6 hours had passed, the angle between was $\frac{\pi}{3}$. Thus no change had been made.
 
 \begin{problem}{7}
 	Geometric Transformations
 \end{problem}
+
+a)\\ 
+The set of the columns is $\left\{\sqbrl\begin{matrix}\cos{\theta}\\ \sin{\theta}\\\end{matrix}\sqbrr,\sqbrl\begin{matrix}-\sin{\theta}\\\cos{\theta}\end{matrix}\sqbrr\right\}$ and by substituting any value for $\theta$ that is within the range of 0 to $2\pi$ will produce the scale that we can then reduce down to RREF. To simplify it, I'll use $2\pi$ so I don't have to make it into RREF.\\
+	\[S= \left\{\sqbrl\begin{matrix}
+	\cos{2\pi}\\
+	\sin{2\pi}\\\end{matrix}\sqbrr,
+	\sqbrl\begin{matrix}
+	-\sin{2\pi}\\
+	\cos{2\pi}\end{matrix}\sqbrr
+	\right\}
+	=
+	\left\{\sqbrl\begin{matrix}
+	1\\
+	0\\\end{matrix}\sqbrr,
+	\sqbrl\begin{matrix}
+	0\\
+	1\end{matrix}\sqbrr
+	\right\}
+	\]\\
+The set $S$ is a basis for $ \rm I\!R^2 $ because it is linearly independant, thus they are orthagonol.\\
+
+b)\\
+Continuing from the previous question, and using the same result, the magnitude of each column is 1. \\
+	\[S_1 = \sqbrl\begin{matrix}1\\0\end{matrix}\sqbrr\]
+	\[\dbarl S_1\dbarr = \sqrt{1^2 + 0^2} = 1\]
+	\[S_2 = \sqbrl\begin{matrix}0\\1\end{matrix}\sqbrr\]
+	\[\dbarl S_1\dbarr = \sqrt{0^2 + 1^2} = 1\]
+	
+c)\\
+	\[R_{\theta}^T = \sqbrl\begin{matrix}\cos{\theta} & \sin{\theta}\\-\sin{\theta} & \cos{\theta}\end{matrix}\sqbrr\]
+	\[R_{\theta}^T\cdot{R_{\theta}}  
+	= \sqbrl\begin{matrix}\cos{\theta} & \sin{\theta}\\-\sin{\theta} & \cos{\theta}\end{matrix}\sqbrr\sqbrl\begin{matrix}	\cos{\theta} & -\sin{\theta}\\\sin{\theta} & \cos{\theta}\end{matrix}\sqbrr
+	= \sqbrl\begin{matrix}\cos{\theta}^2 + \sin{\theta}^2 & -\sin{\theta}\cos{\theta} + \cos{\theta}\sin{\theta}\\
+		-\sin{\theta}\cos{\theta} + \cos{\theta}\sin{\theta} & \sin{\theta}^2 + \cos{\theta}^2\end{matrix}\sqbrr\]
+	\[=\sqbrl\begin{matrix}1 & 0\\ 0 & 1\end{matrix}\sqbrr\]
+
+\begin{problem}{8}
+	Geometric Transformations
+\end{problem}
+	\[Q = \sqbrl\begin{matrix}4 & -8 & 4\\
+							-2 & 4 & -2\\
+							3 & -6 & 3\\
+			     \end{matrix}\sqbrr\begin{matrix}R_1 - \frac{1}{3}R_3\\\\\end{matrix}\]
+			     
 a)\\
+	\[\sim
+		\sqbrl\begin{matrix}
+		3 & -6 & 3\\
+		-2 & 4 & -2\\
+		3 & -6 & 3\\
+		\end{matrix}\sqbrr\begin{matrix}\\\\R_3-R_1\end{matrix}\]
+	\[\sim
+		\sqbrl\begin{matrix}
+		3 & -6 & 3\\
+		-2 & 4 & -2\\
+		0 & 0 & 0\\
+		\end{matrix}\sqbrr\begin{matrix}\frac{1}{3}R_1\\\\\frac{1}{2}R_2\\\end{matrix}\]
+	\[\sim
+		\sqbrl\begin{matrix}
+		1 & -2 & 1\\
+		-1 & 2 & -1\\
+		0 & 0 & 0\\
+		\end{matrix}\sqbrr\begin{matrix}\\R_2+R_1\\\end{matrix}\]
+	\[\sim
+		\sqbrl\begin{matrix}
+		1 & -2 & 1\\
+		0 & 0 & 0\\
+		0 & 0 & 0\\
+		\end{matrix}\sqbrr\]
+This represents a plane. There are two free variables. This is because all three equations are the same plane, thus they intersect in infinitely many points.
+\[x_1 -2x_2 +x_3 = 0\]
+
+b)\\
+	\[Q\vec x = \sqbrl\begin{matrix}
+		1 & -2 & 1\\
+		0 & 0 & 0\\
+		0 & 0 & 0\\
+		\end{matrix}\sqbrr\sqbrl\begin{matrix}1\\-2\\1\end{matrix}\sqbrr
+		= \sqbrl\begin{matrix}6\\0\\0\end{matrix}\sqbrr\]
+	\[Q\vec y = \sqbrl\begin{matrix}
+		1 & -2 & 1\\
+		0 & 0 & 0\\
+		0 & 0 & 0\\
+		\end{matrix}\sqbrr\sqbrl\begin{matrix}0\\2\\0\end{matrix}\sqbrr
+		= \sqbrl\begin{matrix}-4\\0\\0\end{matrix}\sqbrr\]
+	\[Q\vec x = \sqbrl\begin{matrix}
+		1 & -2 & 1\\
+		0 & 0 & 0\\
+		0 & 0 & 0\\
+		\end{matrix}\sqbrr\sqbrl\begin{matrix}1\\3\\-1\end{matrix}\sqbrr
+		= \sqbrl\begin{matrix}-6\\0\\0\end{matrix}\sqbrr\]
+A simple geometric shape that contains these three vectors is a line.\\
+
+c)\\
+All three vectors found are scalar multiples of $\sqbrl\begin{matrix}1\\0\\0\end{matrix}\sqbrr$ which is equivelant to the columnspace of $Q$ because the columnspace is also scalar multiples of $\sqbrl\begin{matrix}1\\0\\0\end{matrix}\sqbrr$.
+\begin{problem}{9}
+	Geometric Transformations
+\end{problem}
+	\[M = \sqbrl\begin{matrix}1 & 1 & 5\\0 & 1 & 2\\3& -5 & -1\end{matrix}\sqbrr\]
+	
+a)\\
+	\[\sim
+	\sqbrl\begin{matrix}
+	1 & 1 & 5\\
+	0 & 1 & 2\\
+	3& -5 & -1\end{matrix}\sqbrr\begin{matrix}\\\\R_3 - 3R_1\end{matrix}\]
+	\[\sim
+	\sqbrl\begin{matrix}
+	1 & 1 & 5\\
+	0 & 1 & 2\\
+	0& -8 & -16\end{matrix}\sqbrr\begin{matrix}\\\\R_3 + 8R_2\end{matrix}\]
+	\[\sim
+	\sqbrl\begin{matrix}
+	1 & 1 & 5\\
+	0 & 1 & 2\\
+	0& 0 & 0\end{matrix}\sqbrr\begin{matrix}\\\\R_1- R_2\end{matrix}\]
+	\[\sim
+	\sqbrl\begin{matrix}
+	1 & 0 & 3\\
+	0 & 1 & 2\\
+	0& 0 & 0\end{matrix}\sqbrr\]
+$M$ is of rank 2. With 1 free variable. This means that $M$'s solution set represents a line.\\
+
+b)\\
+	\[a_1\vec{m_1} + a_2\vec{m_2} + a_3\vec{m_3} = 0\]
+	\[a_1\sqbrl\begin{matrix}1\\0\\0\end{matrix}\sqbrr + a_2\sqbrl\begin{matrix}0\\1\\0\end{matrix}\sqbrr + a_3\sqbrl\begin{matrix}3\\2\\0\end{matrix}\sqbrr = 0\]
+	\[-3\sqbrl\begin{matrix}1\\0\\0\end{matrix}\sqbrr -2\sqbrl\begin{matrix}0\\1\\0\end{matrix}\sqbrr + 1\sqbrl\begin{matrix}3\\2\\0\end{matrix}\sqbrr = 0\]
+\[a_1 = -3, a_2 = -2, a_3 = 1\] 
+Because the linear combination of the columns have a solution where $a_1, a_2, a_3$ are not all 0, the columnspace of $M$ is linearly dependant.\\
+
+c)\\
+The nullspace of $M$ is $\left\{\sqbrl\begin{matrix}-3\\-2\\1\end{matrix}\sqbrr\right\}$
+
+d)\\
+The columnspace of $M$ is $\left\{\sqbrl\begin{matrix}1\\0\\0\end{matrix}\sqbrr, \sqbrl\begin{matrix}0\\1\\0\end{matrix}\sqbrr\right\}$
+
+e)\\
+The sum of dim(null($M$)) and dim(col($M$)) is 3.\\
+dim(null($M$)) = 1, and dim(col($M$)) = 2\\
+f)\\
+The basis for Col($M$) is $\left\{\sqbrl\begin{matrix}1\\0\\0\end{matrix}\sqbrr, \sqbrl\begin{matrix}0\\1\\0\end{matrix}\sqbrr\right\}$
 \end{document}
