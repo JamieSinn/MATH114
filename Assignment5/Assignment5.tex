@@ -5,6 +5,7 @@
 \usepackage{ gensymb }
 \usepackage[fleqn]{amsmath}
 \usepackage{dsfont}
+\usepackage{graphicx}
  
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
@@ -14,6 +15,8 @@
 \newcommand{\sqbrr}{\right]}
 \newcommand{\barl}{\left\lVert}
 \newcommand{\barr}{\right\rVert}
+
+\graphicspath{{images/}}
 
 \newenvironment{problem}[2][Problem]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
@@ -199,6 +202,26 @@ The only two possible values for the determinant of A are 0 and 1. This is becau
 c)\\
 The determinant of an orthogonal matrix ($A^T$) must be either 1 or -1. This is proven by the relationship of determinants of transposed matrices and how they must be equal. To make a bit more mathematical sense. $det(AA^T) = det(A)^2 = det(I) = 1$. This is because $\sqrt{1} = \pm 1$
 d)\\
+
+
+\begin{problem}{11}
+	Eigenvalues and Eigenvectors
+\end{problem}
+a)\\
+\[A\vec{v_1} = \sqbrl\begin{matrix}2\\0\end{matrix}\sqbrr\] % http://i.imgur.com/QVJKmWp.png
+\[A\vec{v_2} = \sqbrl\begin{matrix}0\\3\end{matrix}\sqbrr\] % http://i.imgur.com/A2VNWra.png
+\[A\vec{v_3} = \sqbrl\begin{matrix}2\\3\end{matrix}\sqbrr\]
+b)\\
+Blue is the input vector, and red is the output vector.\\
+\[A\vec{v_1} \]
+\includegraphics{Av1}
+
+\[A\vec{v_2} \]
+\includegraphics{Av2}
+
+\[A\vec{v_3} \]
+\includegraphics{Av3}
+c)\\
 
 \end{problem}
 \end{document}
