@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsthm,amssymb,amsfonts}
+\usepackage{tipa}
+\usepackage{ gensymb }
+\usepackage[fleqn]{amsmath}
+\usepackage{dsfont}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dbarl}{\left\lVert}
+\newcommand{\dbarr}{\right\rVert}
+\newcommand{\sqbrl}{\left[}
+\newcommand{\sqbrr}{\right]}
+
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{MATH 114 - Fall 2016 - Assignment 6}
+\author{James Sinn - 20654551}
+\maketitle
+ 
+ \begin{problem}{1}
+	Eigenvectors and Eigenvalues
+\end{problem}
+\[A= \sqbrl\begin{matrix}-4& 0 & 0\\2 & -8 & 4\\-4&5&0\end{matrix}\sqbrr\]
+\[(A- \lambda I) = \sqbrl\begin{matrix}-4 - \lambda& 0 & 0\\2 & -8 - \lambda & 4\\-4&5&0 - \lambda\end{matrix}\sqbrr = \]
+\[C(A) = -(\lambda -2 )(\lambda + 4)(\lambda + 10)\]
+\[\lambda_1 = 2, \lambda_2 = -4, \lambda_3 = -10\]
+\[\vec{x_1} = t\sqbrl\begin{matrix}0\\\frac{2}{5}\\1\end{matrix}\sqbrr\]
+\[\vec{x_2} = t\sqbrl\begin{matrix}6\\4\\1\end{matrix}\sqbrr\]
+\[\vec{x_3} = t\sqbrl\begin{matrix}0\\-2\\1\end{matrix}\sqbrr\]
+Eigenspace:\\
+Span of $\vec{x_1}$ is $\left\{\sqbrl\begin{matrix}0\\\frac{2}{5}\\1\end{matrix}\sqbrr\right\}$ and the dimension of it is 1.\\
+Span of $\vec{x_2}$ is $\left\{\sqbrl\begin{matrix}6\\4\\1\end{matrix}\sqbrr\right\}$ and the dimension of it is 1.\\
+Span of $\vec{x_3}$ is $\left\{\sqbrl\begin{matrix}0\\-2\\1\end{matrix}\sqbrr\right\}$ and the dimension of it is 1.\\
+Geometric Multiplicity of all Eigenvalues and vectors is 1.\\
+Algebraic Multiplicity of Eigenvalues and vectors is also 1.\\
+
+
+\begin{problem}{2}
+\end{problem}
+By utilizing synthetic division, as we are given a factor of the characteristic polynomial, we can get the quadratic that can then be factored.\\
+\[(\lambda -1)(2\lambda^2 + 3\lambda -5) = (\lambda -1)(\lambda -1)(\lambda + \frac{5}{2})\]
+Algebraic Multiplicity of $\lambda_1$ is 2, as it appears twice. Algebraic Multiplicity of $\lambda_3$ is 1.\\
+
+
+\begin{problem}{3}
+	Diagonalization 
+\end{problem}
+\end{document}
